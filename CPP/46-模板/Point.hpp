@@ -21,18 +21,24 @@ class Point {
 public:
     /// 构造方法
     Point(int x, int y): m_x(x), m_y(y){}
+    int getX(void);
     
-    int getX(void) {
-        return m_x;
-    }
+    int getY(void);
     
-    int getY(void) {
-        return m_y;
-    }
+    Point operator+(const Point &point);
     
-    Point operator+(const Point &point) {
-        return Point(m_x + point.m_x, m_y + point.m_y);
-    }
+    
+//    int getX(void) {
+//        return m_x;
+//    }
+//    
+//    int getY(void) {
+//        return m_y;
+//    }
+//    
+//    Point operator+(const Point &point) {
+//        return Point(m_x + point.m_x, m_y + point.m_y);
+//    }
 };
 
 #endif /* Point_hpp */
