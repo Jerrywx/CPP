@@ -17,16 +17,13 @@ template <typename T> T add(T a, T b) {
 
 int main(int argc, const char * argv[]) {
     
-    int a = add(3, 3);
-    
+    int a = add<int>(3, 3);
     cout << a << endl;
-    
-    
-    
+
     Point p = Point(10, 20);
     Point p2 = Point(20, 30);
 //    Point p3 = p + p2;
-    Point p3 = add(p, p2);
+    Point p3 = add<Point>(p, p2);
     cout << p3 << endl;
     
 //
